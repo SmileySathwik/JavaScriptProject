@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+    <script>
+        // Arrays
+        document.writeln("<h3> <u>Demo on Arrays</u> </h3></br> ")
+        const s = [34,67,89]  // Same type of Elements 
+        s[1] = 50
+        // s[10] = "cse"
+        document.writeln(s+"<br>")
+        document.writeln(typeof(s)+"</br>")
+        document.writeln(s.length+"</br>")
+        document.writeln(s[0]+"<br>") 
+        document.writeln(s[1]+"<br>") 
+        document.writeln(s[999]+"<br>")
+        document.writeln(typeof(s[0]))
+        s.push("MSWD")
+        s.push(100)
+        // s.pop()
+        document.writeln(s+"<br>")
+        document.writeln(typeof(s)+"</br>")
+        document.writeln(s.length+"</br>")
+        document.writeln(s.reverse()+"</br>")
+        document.writeln(s.sort()+"</br>")
+        document.writeln("Before Shifting -- "+s+"</br>")
+        let element =  s.shift()
+        document.writeln(element+"</br>")
+        document.writeln("After Shifting -- "+s+"</br>")
+        // document.writeln("After Unshift -- "+s.unshift(99.99)+"</br>")
+        let len = s.unshift(99.99)
+        document.writeln("After UnShifting -- "+s+"</br>")
+        let len1 = s.unshift("aws",31)
+        document.writeln("Adding Elements -- "+len1+"</br>")
+        document.writeln("After UnShifting -- "+s+"</br>")
+        document.writeln("<u>Display Array Elements using for loop </u></br>")
+        for(let i=0;i<s.length;i++)
+            document.writeln(s[i]+"<br>")
+        document.writeln("<u>Display Array Elements using for in </u></br>")
+        for(let i in s)
+            document.writeln(s[i]+"<br>")
+            document.writeln("<u>Display Array Elements using for of </u></br>")
+        for(let i of s)
+            document.writeln(i+"<br>")
+        
+        
+
+
+        
+    </script>
+    <body>
+
+    </body>
+</html>

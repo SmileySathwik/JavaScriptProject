@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+    <script>
+        let a = prompt("Enter First Value : ",0)
+        let b = prompt("Enter First Value : ",0)
+        let c = prompt("Enter First Value : ",0)
+        if((a>b)&&(a>c))
+            document.writeln("<h3 align='center'>A is Greatest</h3>")
+        else if((b>c)&&(b>a))
+            document.writeln("<h3 align='center'>B is Greatest</h3>")
+        else if((c>a)&&(c>b))
+            document.writeln("<h3 align='center'>C is Greatest</h3>")
+        else
+            document.writeln("<h3 align='center'>All are Equal</h3>")
+
+        // Using terinary Operator
+        a>b?(a>c?document.writeln("<h3 align='center'>A is Greatest</h3>"):document.writeln("<h3 align='center'>C is Greatest</h3>")):(b>c?document.writeln("<h3 align='center'>B is Greatest</h3>"): document.writeln("<h3 align='center'>C is Greatest</h3>"))
+
+        
+
+    </script>
+    <body></body>
+
+    </body>
+</html>

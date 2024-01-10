@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+    <script>
+        //Template literal 
+            //  ` ` (back tick)
+            const name = "klef"
+            document.writeln(`<b>Hi ${name}</b></br>`)
+            //  Spread operator
+            const a = [10,25,45,56]
+            const b = [...a,30,40]
+            document.writeln("a="+a+"<br>")
+            document.writeln(`b= ${b}<br>`)
+            
+            const x = [12,13,45,56]
+            const y =[56,23,90,34]
+            const z = [...x,...y]
+            document.writeln("x ="+x+"<br>")
+            document.writeln(`y = ${y}<br>`)
+            document.writeln(`z = ${z}<br>`)
+
+            const v1 = "KL University"
+            const v2 = [...v1]
+
+            document.writeln(`v1 = ${v1} <br> v2 ${v2}<br>`)
+
+            // destructuring Assignment 
+            const names = [10,"MSWD","SDP",20]
+            document.writeln(`Names = ${names}<br>`)
+            document.writeln(`Length  = ${names.length}<br>`)
+            const [i,j,k,l] = names 
+            document.writeln(`${i} <br>${j} <br>${k} <br>${l} <br>`)
+
+            const [p,q] = names
+            document.writeln(`${p}<br> ${q}<br>`)
+
+            const [m,  ,  ,n] = names
+            document.writeln(`${m}<br> ${n}<br>`)
+
+
+</script>
+    <body>
+
+    </body>
+</html>

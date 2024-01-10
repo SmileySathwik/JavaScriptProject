@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+    <script>
+        // Map Object -Key Value pair
+        const demomap = new Map()
+
+        demomap.set("id",101)
+        demomap.set("name","MSWD")
+        demomap.set("age",34.5)
+        demomap.set("status",true)
+        demomap.set("name","KLEF") // duplicate key - MSWD will be changed to KLEF
+
+        document.writeln("Map size : "+demomap.size+"</br>")
+        document.writeln("Map Type : "+typeof demomap+"</br>")
+
+        document.writeln(demomap.get("id")+"</br>")
+        document.writeln(demomap.get("city")+"</br>")
+
+        document.writeln(demomap.has("id")+"</br>")
+        document.writeln(demomap.has("city")+"</br>")
+
+        document.writeln("Deletion : "+demomap.delete("status")+"</br>")
+        document.writeln("Map Size : "+demomap.size+"</br>")
+
+        document.writeln("<u>Displaying Map Keys</u></br>")
+        for(let element of demomap.keys())
+            document.writeln(element+"<br>")
+
+        document.writeln("<u>Displaying Map Values</u></br>")
+        for(let element of demomap.keys())
+            document.writeln(demomap.get(element)+"<br>")
+
+        document.writeln("<u>Displaying Map Keys&Values</u></br>")
+        for(let [k,v] of demomap.entries())
+            document.writeln(k+" : "+v+"<br>")
+        demomap.clear()
+        document.writeln("Map Size : "+demomap.size+"</br>")
+
+    </script>   
+    <body>
+
+    </body>
+</html>

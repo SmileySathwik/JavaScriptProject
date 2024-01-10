@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+    </head>
+    <script>
+        function demo1()
+        {
+            document.writeln("I am in DEMO-1</br>")
+            {
+                var a = 10
+                document.writeln("Inside the Block</br>a = "+a+"</br>")
+            }
+            document.writeln("OutSide the Block</br>a = "+a+"</br>")
+        }
+        function demo2()
+        {
+            document.writeln("I am in DEMO-2</br>")
+            {
+                let a = 10
+                document.writeln("Inside the Block</br>a = "+a+"</br>")
+            }
+            document.writeln("OutSide the Block</br>a = "+a+"</br>") // a is not declared (not with in block)
+        }
+        function demo3()
+        {
+            document.writeln("I am in DEMO-2</br>")
+            {
+                const a = 10
+                // a = 20.5 Re-assignment is not possible 
+                document.writeln("Inside the Block</br>a = "+a+"</br>")
+            }
+            document.writeln("OutSide the Block</br>a = "+a+"</br>") // a is not declared (not with in block)
+        }
+
+        // demo1()
+        // demo2()
+        demo3()
+
+    </script>
+    <body>
+
+    </body>
+</html>
